@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haiti Preview</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --fg: #e2e8f0;
+      --accent: #f97316;
+      --muted: #94a3b8;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, rgba(15,23,42,0.95), rgba(15,23,42,0.9)), url('data:image/svg+xml,%3Csvg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23ffffff0d" d="M0 25h25V0H0v25zm50 0h25V0H50v25zm50 0h25V0h-25v25zM0 75h25V50H0v25zm50 0h25V50H50v25zm50 0h25V50h-25v25zM0 125h25v-25H0v25zm50 0h25v-25H50v25zm50 0h25v-25h-25v25z"/%3E%3C/svg%3E');
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .card {
+      background: rgba(15,23,42,0.75);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 720px;
+      width: min(100%, 720px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 5vw, 36px);
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 12px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: rgba(249,115,22,0.15);
+      color: #fed7aa;
+      border: 1px solid rgba(249,115,22,0.35);
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 8px;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      background: rgba(249,115,22,0.2);
+      box-shadow: 0 10px 30px rgba(249,115,22,0.25);
+    }
+
+    .cta svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Haiti Preview</h1>
+    <p>This placeholder page was added because the referenced upload file could not be found in the environment.</p>
+    <p>Replace this file with the real <strong>haiti_preview.html</strong> from your uploads directory to preview the intended content. If you provide the source file, it can be copied into <code>uploads/haiti_preview.html</code> within the repository.</p>
+    <a class="cta" href="../README.md">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+      Back to project README
+    </a>
+  </main>
+</body>
+</html>
